@@ -24,20 +24,31 @@ body {
 .instruction-area {
     background-color: rgba(31, 32, 31, 0.9);
     width: 50%;
-
     margin: auto;
     padding: 10px 10px;
 }
 
 .controls-area {
-    text-align: center;
     font-size: 3rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .random-number-area {
     font-size: 8rem;
 
+}
+
+.buttons-area {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-status-area {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .score-area {
