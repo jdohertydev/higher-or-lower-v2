@@ -43,6 +43,10 @@ body {
 
 }
 
+.game-area {
+    visibility: hidden;
+}
+
 .controls-area {
     font-size: 3rem;
     display: flex;
