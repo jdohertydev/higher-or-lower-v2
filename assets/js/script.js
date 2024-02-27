@@ -1,3 +1,4 @@
+// Removes instruction area on click //
 
 // Creates and loads random number between 1-12
 
