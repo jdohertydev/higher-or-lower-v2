@@ -5,10 +5,11 @@
 /* --------- Global style */
 
 body {
-    background-color: #171717;;
+    background-color: #171717;
+    ;
     font-family: "Play", sans-serif;
     color: #F3F3F3;
-    
+
 }
 
 /* --------- Heading */
@@ -20,11 +21,30 @@ body {
 
 /* --------- Game layout */
 
-.instruction-area{
+.instruction-area {
     background-color: rgba(31, 32, 31, 0.9);
     width: 50%;
-    font-size: 1rem;
+
     margin: auto;
     padding: 10px 10px;
 }
 
+.controls-area {
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.random-number-area {
+    font-size: 8rem;
+
+}
+
+.score-area {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    gap: 10px;
+}
