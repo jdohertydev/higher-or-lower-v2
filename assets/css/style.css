@@ -19,6 +19,10 @@ body {
     font-size: 3rem;
 }
 
+.instruction-area h2 {
+    margin-top: 1px;
+}
+
 /* --------- Game layout */
 
 .instruction-area {
@@ -32,19 +36,17 @@ body {
 }
 
 .play-now-button {
-    display: flex;
+    display: block;
     justify-content: center;
-    margin: 10px;
+    text-align: center;
     font-size: 1.5rem;
     padding: 8px;
     border-radius: 10px 10px;
     border: 1px solid #FFFFFF;
-
-
 }
 
 .game-area {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .controls-area {
@@ -97,16 +99,9 @@ body {
 
 
 
-@media (max-width: 390px) {
-    .instruction-area {
-        width: 90%;
-    }
+@media (max-width: 400px) {
 
     .buttons-area span {
         display: none;
     }
-
-
-
-
 }
