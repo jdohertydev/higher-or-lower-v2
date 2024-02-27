@@ -1,19 +1,32 @@
 // Checks if DOM Content is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     console.log("DOM content loaded");
 
     let btns = document.getElementsByClassName("btn")
     for (const btn of btns) {
         btn.addEventListener("click", function () {
             // playGame(this.dataset.value);
+            displayGame(this.dataset.value)
             console.log(this.dataset.value);
         });
+
     }
 });
 
-// Removes instruction area on click
+// Hides instruction area on click and loads game interface
+
+function displayGame() {
+
+    let hideInstructions = document.getElementById("instruction-area");
+    let showGameArea = document.getElementById("game-area");
+
+    // Hide the element by setting its style display property to "none"
+
+    hideInstructions.style.display = "none";
+    showGameArea.style.visibility = "visible";
+}
 
 // Creates and loads random number between 1-12
 

@@ -45,8 +45,13 @@ body {
     border: 1px solid #FFFFFF;
 }
 
+.play-now-button:hover {
+    cursor: pointer;
+}
+
 .game-area {
-    visibility: visible;
+    visibility: hidden;
+    /* visibility: visible; */
 }
 
 .controls-area {
