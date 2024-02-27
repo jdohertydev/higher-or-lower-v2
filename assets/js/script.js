@@ -1,4 +1,19 @@
-// Removes instruction area on click //
+// Checks if DOM Content is loaded
+
+document.addEventListener("DOMContentLoaded", function () {
+    
+    console.log("DOM content loaded");
+
+    let btns = document.getElementsByClassName("btn")
+    for (const btn of btns) {
+        btn.addEventListener("click", function () {
+            // playGame(this.dataset.value);
+            console.log(this.dataset.value);
+        });
+    }
+});
+
+// Removes instruction area on click
 
 // Creates and loads random number between 1-12
 
@@ -8,7 +23,7 @@ function generateRandomNumber() {
     let lastNumber = document.getElementById("current");
 
     // Ensures the same number as before is not selected
-    
+
     if (randomNumber === lastNumber) {
         randomNumber = Math.floor(Math.random() * 12) + 1;
 
