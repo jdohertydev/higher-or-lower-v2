@@ -37,6 +37,7 @@ body {
 
 .random-number-area {
     font-size: 8rem;
+    padding-right: 20px;
 
 }
 
@@ -44,6 +45,12 @@ body {
 
     display: flex;
     flex-direction: column;
+}
+
+.buttons-area i {
+    font-size: 4rem;
+    padding: 5px;
+
 }
 
 .answer-status-area {
