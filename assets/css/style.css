@@ -1,0 +1,30 @@
+/* Google fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/* --------- Global style */
+
+body {
+    background-color: #171717;;
+    font-family: "Play", sans-serif;
+    color: #F3F3F3;
+    
+}
+
+/* --------- Heading */
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* --------- Game layout */
+
+.instruction-area{
+    background-color: rgba(31, 32, 31, 0.9);
+    width: 50%;
+    font-size: 1rem;
+    margin: auto;
+    padding: 10px 10px;
+}
+
