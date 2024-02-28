@@ -1,14 +1,7 @@
-// Variables
+// Global Variables
 
-//const currentElem = document.getElementById("current");
-//const btns = document.getElementsByClassName("btn");
-//const resultElem = document.getElementById("result");
-const scoreElem = document.getElementById("score");
-
-//let lastNumber = 0;
-//let score = 0;
-
-
+let streak = 0;
+let bestStreak= 0;
 
 // Checks if DOM Content is loaded
 
@@ -41,10 +34,7 @@ function displayGame() {
 }
 
 function playGame(choice) {
-    // console.log(choice);
-
-    let streak = 0;
-
+ 
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
@@ -61,30 +51,24 @@ function playGame(choice) {
         comparison = "lower"
     }
 
-    if (choice == comparison) {
+    if (choice == comparison) { //correct answer
+        
         streak++;
-        // console.log(streak);
+        console.log(streak);
         document.getElementById("current-streak-score").innerHTML = streak;
         document.getElementById("answer-area").innerHTML = 'Correct';
 
 
-    } else {
+    } else { //correct answer
+
+        if (streak > bestStreak) {
+            document.getElementById("best-streak-score").innerHTML = streak;
+        }
 
         streak = 0;
         document.getElementById("current-streak-score").innerHTML = streak;
         document.getElementById("answer-area").innerHTML = 'Incorrect';
     }
-
-
-
-
-
-
-    console.log(newNumber)
-    console.log(oldNumber)
-
-
-
 }
 
 
