@@ -41,12 +41,42 @@ function displayGame() {
 }
 
 function playGame(choice) {
-    console.log(choice);
+    // console.log(choice);
+
+    let streak = 0;
 
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
     let newNumber = generateRandomNumber();
+
+    let comparison; // The logic
+
+    if (oldNumber < newNumber) {
+
+        comparison = "higher";
+
+    } else {
+
+        comparison = "lower"
+    }
+
+    if (choice == comparison) {
+        streak++;
+        // console.log(streak);
+        document.getElementById("current-streak-score").innerHTML = streak;
+        document.getElementById("answer-area").innerHTML = 'Correct';
+
+
+    } else {
+
+        streak = 0;
+        document.getElementById("current-streak-score").innerHTML = streak;
+        document.getElementById("answer-area").innerHTML = 'Incorrect';
+    }
+
+
+
 
 
 
@@ -79,7 +109,7 @@ function generateRandomNumber() {
     }
 
     // makes randomNumber available outside of the function
-    
+
     return randomNumber
 }
 
