@@ -72,6 +72,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .buttons-area i {
@@ -80,9 +81,15 @@ body {
 
 }
 
+.buttons-area i:hover {
+    color: #ffffffce;
+}
+
+
 .answer-area {
     text-align: center;
     font-size: 2rem;
+    padding-top: 10px;
 }
 
 .score-area {
