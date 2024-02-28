@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let btns = document.getElementsByClassName("btn")
     for (const btn of btns) {
         btn.addEventListener("click", function () {
-            // playGame(this.dataset.value);
             displayGame(this.dataset.value)
-            console.log(this.dataset.value);
+            playGame(this.dataset.value);
+            //console.log(this.dataset.value);
         });
 
     }
@@ -26,6 +26,11 @@ function displayGame() {
 
     hideInstructions.style.display = "none";
     showGameArea.style.visibility = "visible";
+}
+
+function playGame(choice){
+    console.log(choice);
+
 }
 
 // Creates and loads random number between 1-12
