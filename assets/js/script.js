@@ -34,18 +34,16 @@ function displayGame() {
     showGameArea.style.visibility = "visible";
 }
 
-
-
-
-
 function playGame(choice) {
 
 
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
-
     let newNumber = generateRandomNumber();
+
+    console.log(oldNumber)
+    console.log(newNumber)
 
     let comparison; // The logic
 
