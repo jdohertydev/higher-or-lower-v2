@@ -1,3 +1,15 @@
+// Variables
+
+//const currentElem = document.getElementById("current");
+//const btns = document.getElementsByClassName("btn");
+//const resultElem = document.getElementById("result");
+const scoreElem = document.getElementById("score");
+
+//let lastNumber = 0;
+//let score = 0;
+
+
+
 // Checks if DOM Content is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,15 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// HigherOrLowerGame object encapsulating the game logic (Source:)
-
-const HigherOrLowerGame = {
-    currentNumber: 0,
-    currentStreak: 0,
-    highestStreak: 0,
-    
-}
-
 // Hides instruction area on click and loads game interface
 
 function displayGame() {
@@ -40,9 +43,20 @@ function displayGame() {
 function playGame(choice) {
     console.log(choice);
 
-    let comparison
+    // Create new number for comparison
+
+    let oldNumber = document.getElementById("current").innerText;
+    let newNumber = generateRandomNumber();
+
+
+
+    console.log(newNumber)
+    console.log(oldNumber)
+
+
 
 }
+
 
 // Creates and loads random number between 1-12
 
@@ -58,12 +72,16 @@ function generateRandomNumber() {
 
     } else {
 
-        console.log(randomNumber);
+        // console.log(randomNumber);
         document.getElementById("current");
         document.getElementById("current").innerHTML = randomNumber;
 
     }
+
+    // makes randomNumber available outside of the function
+    
+    return randomNumber
 }
 
-generateRandomNumber()
+
 
