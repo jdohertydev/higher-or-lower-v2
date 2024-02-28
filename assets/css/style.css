@@ -85,11 +85,21 @@ body {
     color: #ffffffce;
 }
 
-
 .answer-area {
     text-align: center;
     font-size: 2rem;
     padding-top: 10px;
+
+}
+
+/* Changes color of text if answer is correct */
+
+.correct {
+    color: #00FF00;
+}
+
+.incorrect {
+    color: #ff0000;
 }
 
 .score-area {

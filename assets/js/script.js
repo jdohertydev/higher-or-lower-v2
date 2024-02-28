@@ -1,7 +1,7 @@
 // Global Variables
 
 let streak = 0;
-let bestStreak= 0;
+let bestStreak = 0;
 
 // Checks if DOM Content is loaded
 
@@ -34,7 +34,7 @@ function displayGame() {
 }
 
 function playGame(choice) {
- 
+
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
@@ -51,14 +51,18 @@ function playGame(choice) {
         comparison = "lower"
     }
 
-    if (choice == comparison) { //correct answer
-        
+    if (choice == comparison) { // correct answer
+
         streak++;
         document.getElementById("current-streak-score").innerHTML = streak;
+
+        document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
+        document.getElementById("answer-area").classList.remove("incorrect");
+
         document.getElementById("answer-area").innerHTML = 'Correct';
 
 
-    } else { //correct answer
+    } else { // incorrect answer
 
         if (streak > bestStreak) {
             document.getElementById("best-streak-score").innerHTML = streak;
@@ -66,7 +70,17 @@ function playGame(choice) {
 
         streak = 0;
         document.getElementById("current-streak-score").innerHTML = streak;
+
+        
+        document.getElementById("answer-area").classList.add("incorrect"); // Changes answer-area color to red
+        document.getElementById("answer-area").classList.remove("correct");
         document.getElementById("answer-area").innerHTML = 'Incorrect';
+
+
+
+
+
+
     }
 }
 
