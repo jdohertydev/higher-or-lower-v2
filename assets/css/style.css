@@ -6,7 +6,6 @@
 
 body {
     background-color: #171717;
-    ;
     font-family: "Play", sans-serif;
     color: #F3F3F3;
 
@@ -45,8 +44,10 @@ body {
     border: 1px solid #FFFFFF;
 }
 
+
 .play-now-button:hover {
     cursor: pointer;
+    background-color: #ffffff07;
 }
 
 .game-area {
