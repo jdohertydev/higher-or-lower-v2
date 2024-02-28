@@ -54,7 +54,6 @@ function playGame(choice) {
     if (choice == comparison) { //correct answer
         
         streak++;
-        console.log(streak);
         document.getElementById("current-streak-score").innerHTML = streak;
         document.getElementById("answer-area").innerHTML = 'Correct';
 
@@ -96,6 +95,5 @@ function generateRandomNumber() {
 
     return randomNumber
 }
-
 
 
