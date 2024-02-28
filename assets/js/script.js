@@ -13,11 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const btn of btns) {
         btn.addEventListener("click", function () {
             displayGame(this.dataset.value)
-            playGame(this.dataset.value);
+            playGame(this.dataset.value);            
             //console.log(this.dataset.value);
         });
 
     }
+    
 });
 
 // Hides instruction area on click and loads game interface
@@ -33,11 +34,17 @@ function displayGame() {
     showGameArea.style.visibility = "visible";
 }
 
+
+
+
+
 function playGame(choice) {
+
 
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
+    
     let newNumber = generateRandomNumber();
 
     let comparison; // The logic
