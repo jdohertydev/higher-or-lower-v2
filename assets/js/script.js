@@ -95,6 +95,7 @@ function playGame(choice) {
 // Creates and loads random number between 1-12
 
 function generateRandomNumber() {
+
     let randomNumber = Math.floor(Math.random() * 12) + 1;
 
     let lastNumber = document.getElementById("current");
@@ -111,9 +112,12 @@ function generateRandomNumber() {
 
     }
 
-    // makes randomNumber available outside of the function
+    // Makes randomNumber available outside of the function
 
     return randomNumber
+
+
+
 }
 
 
