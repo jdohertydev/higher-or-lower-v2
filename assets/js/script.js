@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const btn of btns) {
         btn.addEventListener("click", function () {
             displayGame(this.dataset.value)
-            playGame(this.dataset.value);            
+            playGame(this.dataset.value);
             //console.log(this.dataset.value);
         });
 
     }
-    
+
 });
 
 // Hides instruction area on click and loads game interface
@@ -44,7 +44,7 @@ function playGame(choice) {
     // Create new number for comparison
 
     let oldNumber = document.getElementById("current").innerText;
-    
+
     let newNumber = generateRandomNumber();
 
     let comparison; // The logic
@@ -78,7 +78,7 @@ function playGame(choice) {
         streak = 0;
         document.getElementById("current-streak-score").innerHTML = streak;
 
-        
+
         document.getElementById("answer-area").classList.add("incorrect"); // Changes answer-area color to red
         document.getElementById("answer-area").classList.remove("correct");
         document.getElementById("answer-area").innerHTML = 'Incorrect';
@@ -107,7 +107,6 @@ function generateRandomNumber() {
     } else {
 
         // console.log(randomNumber);
-        document.getElementById("current");
         document.getElementById("current").innerHTML = randomNumber;
 
     }
