@@ -15,6 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// HigherOrLowerGame object encapsulating the game logic (Source:)
+
+const HigherOrLowerGame = {
+    currentNumber: 0,
+    currentStreak: 0,
+    highestStreak: 0,
+    
+}
+
 // Hides instruction area on click and loads game interface
 
 function displayGame() {
@@ -28,8 +37,10 @@ function displayGame() {
     showGameArea.style.visibility = "visible";
 }
 
-function playGame(choice){
+function playGame(choice) {
     console.log(choice);
+
+    let comparison
 
 }
 
