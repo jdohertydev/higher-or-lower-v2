@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+// Enables user to use up and down arrow keys to play game *** NOT WORKING ***
+
+document.getElementById("button-area").addEventListener("keydown", function (event) {
+    if (event.key === "ArrowUp") {
+        console.log(event);
+        if (event.key === "ArrowDown") {
+            console.log(event);
+        }
+    }
+});
+
 // Hides instruction area on click and loads game interface
 
 function displayGame() {
