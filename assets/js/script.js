@@ -67,9 +67,13 @@ function playGame(choice) {
 
     }
 }
-function correctAnswer(){
+function correctAnswer() {
 
     streak++;
+
+    changeBackgroundColor()
+
+
     document.getElementById("current-streak-score").innerHTML = streak;
 
     document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
@@ -77,9 +81,10 @@ function correctAnswer(){
 
     document.getElementById("answer-area").innerHTML = 'Correct';
 
+
 }
 
-function incorrectAnswer(){
+function incorrectAnswer() {
 
     if (streak > bestStreak) {
         document.getElementById("best-streak-score").innerHTML = streak;
@@ -95,10 +100,36 @@ function incorrectAnswer(){
 
 }
 
-function incrementStreak(){
+function changeBackgroundColor() {
+
+    // code to change background colour depending on streak 
+    // 3 - Bronze
+    // 5 - Siliver
+    // 10 - Gold
+
+    let backgroundColor;
+
+    switch (streak) {
+        case (streak = 1):
+            console.log(streak);
+            backgroundColor = document.body.style.backgroundColor = '#5c3a0a';
+            break;
+        case (streak = 2):
+            console.log(streak);
+            backgroundColor = document.body.style.backgroundColor = '#727375';
+            break;
+        case (streak = 3):
+            backgroundColor = document.body.style.backgroundColor = '#B59410';
+            console.log(streak);
+            break;
+
+        default:
+        //console.log(streak);
+    }
+}
 
 
-} 
+
 
 
 // Creates and loads random number between 1-12
