@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let btns = document.getElementsByClassName("btn")
     for (const btn of btns) {
         btn.addEventListener("click", function () {
-            displayGame(this.dataset.value)
+            displayGame(this.dataset.value);
             playGame(this.dataset.value);
             //console.log(this.dataset.value);
         });
@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp") {
         console.log(event);
-        
+
     }
     if (event.key === "ArrowDown") {
         console.log(event);
-        
+
     }
 });
 
@@ -52,11 +52,19 @@ function playGame(choice) {
 
     // Create new number for comparison
 
-    let oldNumber = document.getElementById("current").innerText;
+    let oldNumber = parseInt(document.getElementById("current").innerText); // ensures number is integer
     let newNumber = generateRandomNumber();
 
-    //console.log(oldNumber)
-    //console.log(newNumber)
+    // check is two numbers are the same before logic
+
+    while (newNumber === oldNumber) {
+        newNumber = generateRandomNumber();
+    }
+
+    // return newNumber
+
+    console.log(oldNumber)
+    console.log(newNumber)
 
     let comparison; // The logic
 
@@ -80,6 +88,7 @@ function playGame(choice) {
 
     }
 }
+
 function correctAnswer() {
 
     streak++;
@@ -112,32 +121,25 @@ function incorrectAnswer() {
 }
 
 function changeBackgroundColor() {
-
     // code to change background colour depending on streak 
     // 3 - Bronze
-    // 5 - Siliver
+    // 5 - Silver
     // 10 - Gold  
 
     switch (streak) {
-        case (streak = 1):
+        case 3:
             document.body.style.backgroundColor = '#5c3a0a';
             break;
-
-        case (streak = 2):
+        case 5:
             document.body.style.backgroundColor = '#727375';
             break;
-
-        case (streak = 3):
+        case 10:
             document.body.style.backgroundColor = '#B59410';
             break;
-
         default:
-
+            break;
     }
 }
-
-
-
 
 
 // Creates and loads random number between 1-12
@@ -145,27 +147,14 @@ function changeBackgroundColor() {
 function generateRandomNumber() {
 
     let randomNumber = Math.floor(Math.random() * 12) + 1;
-
-    let lastNumber = document.getElementById("current");
-
-    // Ensures the same number as before is not selected
-
-    if (randomNumber === lastNumber) {
-        randomNumber = Math.floor(Math.random() * 12) + 1;
-
-    } else {
-
-        //console.log(randomNumber);
-        document.getElementById("current").innerHTML = randomNumber;
-
-    }
-
-    // Makes randomNumber available outside of the function
+    document.getElementById("current").innerHTML = randomNumber;
 
     return randomNumber
 
 
 
 }
+
+
 
 
