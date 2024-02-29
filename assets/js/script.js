@@ -7,7 +7,7 @@ let bestStreak = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log("DOM content loaded");
+    // console.log("DOM content loaded");
 
     let btns = document.getElementsByClassName("btn")
     for (const btn of btns) {
@@ -23,12 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Enables user to use up and down arrow keys to play game *** NOT WORKING ***
 
-document.getElementById("button-area").addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp") {
         console.log(event);
-        if (event.key === "ArrowDown") {
-            console.log(event);
-        }
+        
+    }
+    if (event.key === "ArrowDown") {
+        console.log(event);
+        
     }
 });
 
