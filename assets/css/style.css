@@ -109,10 +109,12 @@ body {
 
 .correct {
     color: #00FF00;
+
 }
 
 .incorrect {
     color: #ff0000;
+
 }
 
 .score-area {
@@ -122,6 +124,8 @@ body {
     padding: 25px;
     text-align: center;
     gap: 10px;
+    transition: all 0.5s linear;
+    /* for remove answer status */
 }
 
 .best-streak-area span,
@@ -132,7 +136,6 @@ body {
     border-radius: 10px 10px;
 
 }
-
 
 
 @media (max-width: 400px) {

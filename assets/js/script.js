@@ -73,12 +73,10 @@ function correctAnswer() {
 
     changeBackgroundColor()
 
-
     document.getElementById("current-streak-score").innerHTML = streak;
 
     document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
     document.getElementById("answer-area").classList.remove("incorrect");
-
     document.getElementById("answer-area").innerHTML = 'Correct';
 
 
@@ -105,26 +103,23 @@ function changeBackgroundColor() {
     // code to change background colour depending on streak 
     // 3 - Bronze
     // 5 - Siliver
-    // 10 - Gold
-
-    let backgroundColor;
+    // 10 - Gold  
 
     switch (streak) {
         case (streak = 1):
-            console.log(streak);
-            backgroundColor = document.body.style.backgroundColor = '#5c3a0a';
+            document.body.style.backgroundColor = '#5c3a0a';
             break;
+
         case (streak = 2):
-            console.log(streak);
-            backgroundColor = document.body.style.backgroundColor = '#727375';
+            document.body.style.backgroundColor = '#727375';
             break;
+
         case (streak = 3):
-            backgroundColor = document.body.style.backgroundColor = '#B59410';
-            console.log(streak);
+            document.body.style.backgroundColor = '#B59410';
             break;
 
         default:
-        //console.log(streak);
+
     }
 }
 
