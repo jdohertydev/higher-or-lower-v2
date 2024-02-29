@@ -42,8 +42,8 @@ function playGame(choice) {
     let oldNumber = document.getElementById("current").innerText;
     let newNumber = generateRandomNumber();
 
-    console.log(oldNumber)
-    console.log(newNumber)
+    //console.log(oldNumber)
+    //console.log(newNumber)
 
     let comparison; // The logic
 
@@ -105,7 +105,7 @@ function generateRandomNumber() {
 
     } else {
 
-        // console.log(randomNumber);
+        //console.log(randomNumber);
         document.getElementById("current").innerHTML = randomNumber;
 
     }
