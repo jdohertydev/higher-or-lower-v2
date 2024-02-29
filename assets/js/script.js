@@ -58,36 +58,47 @@ function playGame(choice) {
 
     if (choice == comparison) { // correct answer
 
-        streak++;
-        document.getElementById("current-streak-score").innerHTML = streak;
-
-        document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
-        document.getElementById("answer-area").classList.remove("incorrect");
-
-        document.getElementById("answer-area").innerHTML = 'Correct';
+        correctAnswer()
 
 
     } else { // incorrect answer
 
-        if (streak > bestStreak) {
-            document.getElementById("best-streak-score").innerHTML = streak;
-        }
-
-        streak = 0;
-        document.getElementById("current-streak-score").innerHTML = streak;
-
-
-        document.getElementById("answer-area").classList.add("incorrect"); // Changes answer-area color to red
-        document.getElementById("answer-area").classList.remove("correct");
-        document.getElementById("answer-area").innerHTML = 'Incorrect';
-
-
-
-
-
+        incorrectAnswer()
 
     }
 }
+function correctAnswer(){
+
+    streak++;
+    document.getElementById("current-streak-score").innerHTML = streak;
+
+    document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
+    document.getElementById("answer-area").classList.remove("incorrect");
+
+    document.getElementById("answer-area").innerHTML = 'Correct';
+
+}
+
+function incorrectAnswer(){
+
+    if (streak > bestStreak) {
+        document.getElementById("best-streak-score").innerHTML = streak;
+    }
+
+    streak = 0;
+    document.getElementById("current-streak-score").innerHTML = streak;
+
+
+    document.getElementById("answer-area").classList.add("incorrect"); // Changes answer-area color to red
+    document.getElementById("answer-area").classList.remove("correct");
+    document.getElementById("answer-area").innerHTML = 'Incorrect';
+
+}
+
+function incrementStreak(){
+
+
+} 
 
 
 // Creates and loads random number between 1-12
