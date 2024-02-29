@@ -21,16 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-// Enables user to use up and down arrow keys to play game *** NOT WORKING ***
+// Enables user to use up and down arrow keys to play game
 
 document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowUp") {
-        console.log(event);
-
-    }
-    if (event.key === "ArrowDown") {
-        console.log(event);
-
+    if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+        let choice = event.key === "ArrowUp" ? "higher" : "lower"; 
+        playGame(choice);
     }
 });
 
