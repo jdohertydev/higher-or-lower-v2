@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("keydown", function (event) {
     if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-        let choice = event.key === "ArrowUp" ? "higher" : "lower"; 
+        let choice = event.key === "ArrowUp" ? "higher" : "lower";
         playGame(choice);
     }
 });
@@ -57,33 +57,34 @@ function playGame(choice) {
         newNumber = generateRandomNumber();
     }
 
-    // return newNumber
+    checkAnswer()
 
-    console.log(oldNumber)
-    console.log(newNumber)
+    function checkAnswer() {
 
-    let comparison; // The logic
+        let comparison; // The logic
 
-    if (oldNumber < newNumber) {
+        if (oldNumber < newNumber) {
 
-        comparison = "higher";
+            comparison = "higher";
 
-    } else {
+        } else {
 
-        comparison = "lower"
-    }
+            comparison = "lower"
+        }
 
-    if (choice == comparison) { // correct answer
+        if (choice == comparison) { // correct answer
 
-        correctAnswer()
+            correctAnswer()
 
+        } else { // incorrect answer
 
-    } else { // incorrect answer
+            incorrectAnswer()
 
-        incorrectAnswer()
-
+        }
     }
 }
+
+
 
 function correctAnswer() {
 
