@@ -132,16 +132,8 @@ function changeBackgroundColor() {
 
 
 // Creates and loads random number between 1-12
-
 function generateRandomNumber() {
-
-    let randomNumber = Math.floor(Math.random() * 12) + 1;
-    document.getElementById("current").innerHTML = randomNumber;
-
-    return randomNumber
-
-
-
+    return Math.floor(Math.random() * 12) + 1;
 }
 
 
