@@ -41,32 +41,30 @@ function initEventListeners() {
 
 // Hides instruction area on click and loads game interface
 
-function displayGame() {
-
-    let hideInstructions = document.getElementById("instruction-area");
-    let showGameArea = document.getElementById("game-area");
-
-    // Hide the element by setting its style display property to "none"
-
-    hideInstructions.style.display = "none";
-    showGameArea.style.visibility = "visible";
+function startGame() {    
+    instructionArea.style.display = "none";
+    gameArea.style.visibility = "visible";
 }
 
-function playGame(choice) {
+function onActionBtnClick() {
+    playTurn(this.dataset.value);
+};
 
 
-    // Create new number for comparison
-
-    let oldNumber = parseInt(document.getElementById("current").innerText); // ensures number is integer
+function playTurn(choice) {
+    // Create new number for comparison 
+    const currentNumber = parseInt(document.getElementById("current").innerText); // ensures number is integer
     let newNumber = generateRandomNumber();
-
+    
     // check is two numbers are the same before logic
-
-    while (newNumber === oldNumber) {
+    while (newNumber === currentNumber) {
         newNumber = generateRandomNumber();
     }
 
-    checkAnswer()
+    // Update new number to HTML
+    document.getElementById("current").innerHTML = newNumber;
+    
+    checkAnswer();
 
     function checkAnswer() {
 
