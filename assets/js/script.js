@@ -9,7 +9,7 @@ const COLORS = {
 };
 
 let streak = 0;
-let bestStreak = 0;
+
 
 // Checks if DOM Content is loaded
 
