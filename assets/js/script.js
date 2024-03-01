@@ -78,18 +78,10 @@ function playTurn(choice) {
     }
 }
 
-
 function correctAnswer() {
-
-    streak++;
-
-    changeBackgroundColor()
-
-    document.getElementById("current-streak-score").innerHTML = streak;
-
-    document.getElementById("answer-area").classList.add("correct"); // Changes answer-area color to green
-    document.getElementById("answer-area").classList.remove("incorrect");
-    document.getElementById("answer-area").innerHTML = 'Correct';
+    updateStreakScore(1);
+    changeBackgroundColor();
+}
 
 
 }
