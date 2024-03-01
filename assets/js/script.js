@@ -10,6 +10,11 @@ const COLORS = {
 
 let streak = 0;
 
+const playNowBtn = document.getElementById("play-now");
+const instructionArea = document.getElementById("instruction-area");
+const gameArea = document.getElementById("game-area");
+
+
 
 // Checks if DOM Content is loaded
 
