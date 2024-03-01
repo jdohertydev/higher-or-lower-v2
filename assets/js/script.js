@@ -1,5 +1,13 @@
 // Global Variables
 
+const COLORS = {
+    RED: 'red',
+    GREEN: 'green',
+    BRONZE: '#5c3a0a',
+    SILVER: '#727375',
+    GOLD: '#B59410'
+};
+
 let streak = 0;
 let bestStreak = 0;
 
@@ -84,8 +92,6 @@ function playGame(choice) {
     }
 }
 
-
-
 function correctAnswer() {
 
     streak++;
@@ -151,6 +157,7 @@ function generateRandomNumber() {
 
 
 }
+
 
 
 
