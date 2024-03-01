@@ -67,29 +67,17 @@ function playTurn(choice) {
     checkAnswer();
 
     function checkAnswer() {
-
-        let comparison; // The logic
-
-        if (oldNumber < newNumber) {
-
-            comparison = "higher";
-
+        // New no > Old no; Choice = H/L
+        // New no < Old no; Choice = H/L
+        if ((currentNumber < newNumber && choice === "higher") || (currentNumber > newNumber && choice === "lower")) {
+            // Correct
+            correctAnswer();
         } else {
-
-            comparison = "lower"
-        }
-
-        if (choice == comparison) { // correct answer
-
-            correctAnswer()
-
-        } else { // incorrect answer
-
-            incorrectAnswer()
-
+            incorrectAnswer()  
         }
     }
 }
+
 
 function correctAnswer() {
 
