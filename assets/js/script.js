@@ -14,13 +14,11 @@ const playNowBtn = document.getElementById("play-now");
 const instructionArea = document.getElementById("instruction-area");
 const gameArea = document.getElementById("game-area");
 
-
-
 // Checks if DOM Content is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
     // console.log("DOM content loaded");
-    initEventListeners();   
+    initEventListeners();
 });
 
 function initEventListeners() {
@@ -41,7 +39,7 @@ function initEventListeners() {
 
 // Hides instruction area on click and loads game interface
 
-function startGame() {    
+function startGame() {
     instructionArea.style.display = "none";
     gameArea.style.visibility = "visible";
 }
@@ -50,12 +48,11 @@ function onActionBtnClick() {
     playTurn(this.dataset.value);
 };
 
-
 function playTurn(choice) {
     // Create new number for comparison 
     const currentNumber = parseInt(document.getElementById("current").innerText); // ensures number is integer
     let newNumber = generateRandomNumber();
-    
+
     // check is two numbers are the same before logic
     while (newNumber === currentNumber) {
         newNumber = generateRandomNumber();
@@ -63,7 +60,7 @@ function playTurn(choice) {
 
     // Update new number to HTML
     document.getElementById("current").innerHTML = newNumber;
-    
+
     checkAnswer();
 
     function checkAnswer() {
@@ -73,7 +70,7 @@ function playTurn(choice) {
             // Correct
             correctAnswer();
         } else {
-            incorrectAnswer()  
+            incorrectAnswer()
         }
     }
 }
@@ -82,9 +79,6 @@ function correctAnswer() {
     updateStreakScore(1);
     changeBackgroundColor();
 }
-
-
-
 
 function incorrectAnswer() {
     // Update best streak value
@@ -101,10 +95,10 @@ function updateStreakScore(updateValue) {
     // Correct answer case
     const answerArea = document.getElementById("answer-area");
     if (updateValue > 0) {
-        answerArea.innerHTML = 'Correct';    
+        answerArea.innerHTML = 'Correct';
         answerArea.style.color = COLORS.GREEN;
     } else {
-        answerArea.innerHTML = 'Incorrect';    
+        answerArea.innerHTML = 'Incorrect';
         answerArea.style.color = COLORS.RED;
     }
 }
@@ -114,7 +108,7 @@ function changeBackgroundColor() {
     // 3 - Bronze
     // 5 - Silver
     // 10 - Gold  
-    
+
     switch (streak) {
         case 3:
             document.body.style.backgroundColor = COLORS.BRONZE;
@@ -130,13 +124,7 @@ function changeBackgroundColor() {
     }
 }
 
-
 // Creates and loads random number between 1-12
 function generateRandomNumber() {
     return Math.floor(Math.random() * 12) + 1;
 }
-
-
-
-
-
