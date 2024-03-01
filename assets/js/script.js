@@ -1,11 +1,11 @@
 // Global Variables
 
 const COLORS = {
-    RED: 'red',
-    GREEN: 'green',
-    BRONZE: '#5c3a0a',
-    SILVER: '#727375',
-    GOLD: '#B59410'
+    RED: "red",
+    GREEN: "green",
+    BRONZE: "#5c3a0a",
+    SILVER: "#727375",
+    GOLD: "#B59410",
 };
 
 let streak = 0;
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initEventListeners() {
     playNowBtn.addEventListener("click", startGame);
-    let actionBtns = document.getElementsByClassName("action-btn")
+    let actionBtns = document.getElementsByClassName("action-btn");
     for (const eachActionBtn of actionBtns) {
         eachActionBtn.addEventListener("click", onActionBtnClick);
     }
@@ -46,10 +46,10 @@ function startGame() {
 
 function onActionBtnClick() {
     playTurn(this.dataset.value);
-};
+}
 
 function playTurn(choice) {
-    // Create new number for comparison 
+    // Create new number for comparison
     const currentNumber = parseInt(document.getElementById("current").innerText); // ensures number is integer
     let newNumber = generateRandomNumber();
 
@@ -70,7 +70,7 @@ function playTurn(choice) {
             // Correct
             correctAnswer();
         } else {
-            incorrectAnswer()
+            incorrectAnswer();
         }
     }
 }
@@ -95,19 +95,19 @@ function updateStreakScore(updateValue) {
     // Correct answer case
     const answerArea = document.getElementById("answer-area");
     if (updateValue > 0) {
-        answerArea.innerHTML = 'Correct';
+        answerArea.innerHTML = "Correct";
         answerArea.style.color = COLORS.GREEN;
     } else {
-        answerArea.innerHTML = 'Incorrect';
+        answerArea.innerHTML = "Incorrect";
         answerArea.style.color = COLORS.RED;
     }
 }
 
 function changeBackgroundColor() {
-    // code to change background colour depending on streak 
+    // code to change background colour depending on streak
     // 3 - Bronze
     // 5 - Silver
-    // 10 - Gold  
+    // 10 - Gold
 
     switch (streak) {
         case 3:
