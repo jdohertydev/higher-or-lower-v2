@@ -114,16 +114,16 @@ function changeBackgroundColor() {
     // 3 - Bronze
     // 5 - Silver
     // 10 - Gold  
-
+    
     switch (streak) {
         case 3:
-            document.body.style.backgroundColor = '#5c3a0a';
+            document.body.style.backgroundColor = COLORS.BRONZE;
             break;
         case 5:
-            document.body.style.backgroundColor = '#727375';
+            document.body.style.backgroundColor = COLORS.SILVER;
             break;
         case 10:
-            document.body.style.backgroundColor = '#B59410';
+            document.body.style.backgroundColor = COLORS.GOLD;
             break;
         default:
             break;
