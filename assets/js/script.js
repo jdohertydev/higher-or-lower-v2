@@ -17,7 +17,6 @@ const gameArea = document.getElementById("game-area");
 // Checks if DOM Content is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
-    // console.log("DOM content loaded");
     initEventListeners();
 });
 
