@@ -95,6 +95,20 @@ function incorrectAnswer() {
     updateStreakScore(-streak);
 }
 
+function updateStreakScore(updateValue) {
+    streak = streak + updateValue;
+    document.getElementById("current-streak-score").innerHTML = streak;
+    // Correct answer case
+    const answerArea = document.getElementById("answer-area");
+    if (updateValue > 0) {
+        answerArea.innerHTML = 'Correct';    
+        answerArea.style.color = COLORS.GREEN;
+    } else {
+        answerArea.innerHTML = 'Incorrect';    
+        answerArea.style.color = COLORS.RED;
+    }
+}
+
 function changeBackgroundColor() {
     // code to change background colour depending on streak 
     // 3 - Bronze
