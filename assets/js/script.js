@@ -19,29 +19,25 @@ const gameArea = document.getElementById("game-area");
 // Checks if DOM Content is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
-
     // console.log("DOM content loaded");
-
-    let btns = document.getElementsByClassName("btn")
-    for (const btn of btns) {
-        btn.addEventListener("click", function () {
-            displayGame(this.dataset.value);
-            playGame(this.dataset.value);
-            //console.log(this.dataset.value);
-        });
-
-    }
-
+    initEventListeners();   
 });
 
-// Enables user to use up and down arrow keys to play game
-
-document.addEventListener("keydown", function (event) {
-    if (event.key === "ArrowUp" || event.key === "ArrowDown") {
-        let choice = event.key === "ArrowUp" ? "higher" : "lower";
-        playGame(choice);
+function initEventListeners() {
+    playNowBtn.addEventListener("click", startGame);
+    let actionBtns = document.getElementsByClassName("action-btn")
+    for (const eachActionBtn of actionBtns) {
+        eachActionBtn.addEventListener("click", onActionBtnClick);
     }
-});
+
+    // Enables user to use up and down arrow keys to play game
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+            let choice = event.key === "ArrowUp" ? "higher" : "lower";
+            playTurn(choice);
+        }
+    });
+}
 
 // Hides instruction area on click and loads game interface
 
