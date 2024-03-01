@@ -84,22 +84,15 @@ function correctAnswer() {
 }
 
 
-}
+
 
 function incorrectAnswer() {
-
-    if (streak > bestStreak) {
-        document.getElementById("best-streak-score").innerHTML = streak;
+    // Update best streak value
+    let bestStreakNode = document.getElementById("best-streak-score");
+    if (streak > parseInt(bestStreakNode.innerHTML)) {
+        bestStreakNode.innerHTML = streak;
     }
-
-    streak = 0;
-    document.getElementById("current-streak-score").innerHTML = streak;
-
-
-    document.getElementById("answer-area").classList.add("incorrect"); // Changes answer-area color to red
-    document.getElementById("answer-area").classList.remove("correct");
-    document.getElementById("answer-area").innerHTML = 'Incorrect';
-
+    updateStreakScore(-streak);
 }
 
 function changeBackgroundColor() {
