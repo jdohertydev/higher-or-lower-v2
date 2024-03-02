@@ -28,10 +28,9 @@ Insert picture from 'Am I reponsive?'
     * The buttons and text are clickable with the cursor changing to pointer and trigger an onEvent action in JavaScript. 
     * The keystrokes for ‘up’ and ‘down’ have been enabled so users using a keyboard can bypass clicking.
 
-* Container to say if answer is correct or incorrect
-    * Traditional green for correct
-    * Traditional red for incorrect
-    * Flashes in and out
+* Area to say if answer is correct or incorrect
+     *If the user gets the answer correct, a green ‘Correct’ text is displayed however if the answer is incorrect, a red ‘Incorrect’ text is displayed. These colours are traditionally used in this context.
+     
 * Score area
     * Shows current streak and also best streak
     * Depending on best streak, background color will change
