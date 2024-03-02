@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initEventListeners() {
     playNowBtn.addEventListener("click", startGame);
-    let actionBtns = document.getElementsByClassName("action-btn")
+    let actionBtns = document.getElementsByClassName("action-btn");
     for (const eachActionBtn of actionBtns) {
         eachActionBtn.addEventListener("click", onActionBtnClick);
     }
@@ -43,7 +43,7 @@ function startGame() {
 
 function onActionBtnClick() {
     playTurn(this.dataset.value);
-};
+}
 
 function playTurn(choice) {
     // Create new number for comparison 
@@ -67,7 +67,7 @@ function playTurn(choice) {
             // Correct
             correctAnswer();
         } else {
-            incorrectAnswer()
+            incorrectAnswer();
         }
     }
 }

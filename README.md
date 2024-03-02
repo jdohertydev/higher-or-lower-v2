@@ -1,5 +1,4 @@
 # Higher or Lower?
-
 ‘Higher or Lower?’ is a classic, fun and incredibly simple game that most of us have played in our lives but  normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessible on all devices. 
 
 Insert picture from 'Am I reponsive?'
@@ -7,11 +6,9 @@ Insert picture from 'Am I reponsive?'
 [Source: https://jdohertydev.github.io/higher-or-lower-v2/]
 
 ## Early development
-
 Before starting, a basic wireframe was developed using balsamiq which helped visualise the website.
 
 ## Technologies used
-
 Based on the information given by GitHub, this project uses:
 
 * JavaScript - 27.9% 
@@ -24,7 +21,6 @@ Based on the information given by GitHub, this project uses:
 ## Features
 
 ### Existing Features
-
 * Simple colour scheme
     * At the heart of the game’s design is simplicity and this starts with the colour scheme used. A simple yet elegant black and white interface combines with the "Play" font which gives this game a retro, arcade feel. 
 
@@ -52,13 +48,11 @@ Based on the information given by GitHub, this project uses:
     * On smaller viewports, the font size is reduced to accommodate the content.
     * To add an element of progress, JavaScript is used to change the page background colour depending on the user’s streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
 
-
 ### Features Left to Implement
 * Transitioning text
     * Within the game area, having the answer status transition in and out would improve the visual aesthetics. This proved a bit too technical at this stage.
 
 ## Testing
-
 * This site has been tested on a Windows 11 desktop version of Chrome, Firefox and Edge.
 * Using Chrome Dev Tools, simulations of mobile and tablet viewports have also been tested with no major display errors.
 
@@ -67,18 +61,31 @@ Based on the information given by GitHub, this project uses:
 ### Validator Testing
 
 #### HTML
-
 * No HTML errors are returned when passing through [The W3C Markup Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjdohertydev.github.io%2Fhigher-or-lower-v2%2F).
 
 #### CSS
-
 * No CSS errors are returned when passing through [The W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjdohertydev.github.io%2Fhigher-or-lower-v2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 #### JavaScript
+* No errors were found when passing through the official [Jshint validator](https://jshint.com/).
+* The following metrics were returned:
+    * There are **12** functions in this file.
+    * Function with the largest signature takes **1** arguments, while the median is **0**.
+    * Largest function has **8** statements in it, while the median is **2.5**.
+    * The most complex function has a cyclomatic complexity value of **5** while the median is **2**.
+
+### Accessibility
+* This site was developed with a colour scheme that is visually appealing but also very minimal, always considering the accessibility of the user.
+* Using Lighthouse, this site scored an accessibility rating of 94 and a 92-performance rating overall.
 
 ## Unfixed Bugs
 
 ## Deployment
+* This site was created using GitPod and deployed to GitHub.
+    * In the GitHub repository, navigate to the Settings tab.
+    * From the source section drop-down menu, select the Master Branch.
+    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+* The live link is ['Higher or Lower'?](https://jdohertydev.github.io/higher-or-lower-v2/).
 
 ## Credits
 
