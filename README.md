@@ -25,18 +25,22 @@ Insert picture from 'Am I reponsive?'
 
 * Game area
     * The user is presented with a simple interface; a number, up and down icons from FontAwesome which are purposely placed on top of each other for good design, as well as ‘higher and ‘lower’ text. 
+    * The 'higher' and 'lower' text element is removed when viewed on smaller viewports to avoid the text wrapping.
     * The buttons and text are clickable with the cursor changing to pointer and trigger an onEvent action in JavaScript. 
     * The keystrokes for ‘up’ and ‘down’ have been enabled so users using a keyboard can bypass clicking.
 
 * Area to say if answer is correct or incorrect
-     *If the user gets the answer correct, a green ‘Correct’ text is displayed however if the answer is incorrect, a red ‘Incorrect’ text is displayed. These colours are traditionally used in this context.
-     
+     * If the user gets the answer correct, a green ‘Correct’ text is displayed however if the answer is incorrect, a red ‘Incorrect’ text is displayed. These colours are traditionally used in this context.
+
 * Score area
-    * Shows current streak and also best streak
-    * Depending on best streak, background color will change
+    * The score area is logically placed at the bottom of the game area which shows the user’s current and highest streak.
+    * On smaller viewports, the font size is reduced to accommodate the content.
+    * To add an element of progress, JavaScript is used to change the page background colour depending on the user’s streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
+
 
 ### Features Left to Implement
-* harder mode
+* Transitioning text
+    * Within the game area, having the answer status transition in and out would improve the visual aesthetics. This proved a bit too technical at this stage.
 
 ## Testing
 
