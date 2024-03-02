@@ -59,9 +59,21 @@ Based on the information given by GitHub, this project uses:
 
 ## Testing
 
+* This site has been tested on a Windows 11 desktop version of Chrome, Firefox and Edge.
+* Using Chrome Dev Tools, simulations of mobile and tablet viewports have also been tested with no major display errors.
+
+### Screenshots of the website on different devices
+
 ### Validator Testing
+
 #### HTML
+
+* No HTML errors are returned when passing through [The W3C Markup Validation Service](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjdohertydev.github.io%2Fhigher-or-lower-v2%2F).
+
 #### CSS
+
+* No CSS errors are returned when passing through [The W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjdohertydev.github.io%2Fhigher-or-lower-v2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
+
 #### JavaScript
 
 ## Unfixed Bugs
