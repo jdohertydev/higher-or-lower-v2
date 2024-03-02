@@ -130,4 +130,9 @@ body {
         display: none;
     }
 
+    .score-area {
+        display: block;
+        font-size: 1.6rem;
+    }
+
 }
