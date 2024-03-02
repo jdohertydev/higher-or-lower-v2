@@ -6,6 +6,21 @@ Insert picture from 'Am I reponsive?'
 
 [Source: https://jdohertydev.github.io/higher-or-lower-v2/]
 
+## Early development
+
+Before starting, a basic wireframe was developed using balsamiq which helped visualise the website.
+
+## Technologies used
+
+Based on the information given by GitHub, this project uses:
+
+* JavaScript - 27.9% 
+* HTML - 19.8%
+* Dockerfile - 19.0% 
+* CSS - 16.6% 
+* Python - 8.9% 
+* Shell - 7.8%
+
 ## Features
 
 ### Existing Features
