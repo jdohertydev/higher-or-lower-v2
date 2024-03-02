@@ -76,7 +76,7 @@ Based on the information given by GitHub, this project uses:
 
 ### Accessibility
 * This site was developed with a colour scheme that is visually appealing but also very minimal, always considering the accessibility of the user.
-* Using Lighthouse, this site scored an accessibility rating of 94 and a 92-performance rating overall.
+* Using Lighthouse, this site scored an accessibility rating of 100 and a 100 performance rating overall.
 
 ## Unfixed Bugs
 
@@ -90,5 +90,7 @@ Based on the information given by GitHub, this project uses:
 ## Credits
 
 ### Content
-### Media
 
+* The idea for the game came from [DAY 8 - How to code a Number Game in Javascript](https://www.youtube.com/watch?v=kMmtRm4P_EE&t=1205s) and some of the design features draw similarities.
+* The icons were taken from [Font Awesome](https://fontawesome.com/).
+* Along the way, I was helped by my mentor as well as tutor support.
