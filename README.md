@@ -1,17 +1,24 @@
 # Higher or Lower?
 
-‘Higher or Lower?’ is a classic, fun and incredibly simple game that most of us have played in our lives, normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessable on all devices. 
+‘Higher or Lower?’ is a classic, fun and incredibly simple game that most of us have played in our lives but  normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessible on all devices. 
 
 Insert picture from 'Am I reponsive?'
+
+[Source: https://jdohertydev.github.io/higher-or-lower-v2/]
 
 ## Features
 
 ### Existing Features
 
+* Simple colour scheme
+    * At the heart of the game’s design is simplicity and this starts with the colour scheme used. A simple yet elegant black and white interface combines with the "Play" font which gives this game a retro, arcade feel. 
+
+* Logo and Heading
+    * The logo and heading are centred at the top of the page which makes it easy for the user to see. The logo, which combines the ‘+’ and ‘–‘ symbols, adds a visual element which breaks up the text. 
+
 * Favicon
-* Simple color scheme
-* Logo
-* Heading
+    * The Favicon is a mirror image of the logo, which keeps design elements consistent.
+
 * Instruction box
     * Clickable higher or lower buttons
     * Also possible to use up and down keyboard strokes
