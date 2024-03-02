@@ -92,5 +92,6 @@ Based on the information given by GitHub, this project uses:
 ### Content
 
 * The idea for the game came from [DAY 8 - How to code a Number Game in Javascript](https://www.youtube.com/watch?v=kMmtRm4P_EE&t=1205s) and some of the design features draw similarities.
-* The icons were taken from [Font Awesome](https://fontawesome.com/).
+* The website used to make the Favicon was [Favicon Converter](https://favicon.io/favicon-converter/)
+* The icons in the page were taken from [Font Awesome](https://fontawesome.com/).
 * Along the way, I was helped by my mentor as well as tutor support.
