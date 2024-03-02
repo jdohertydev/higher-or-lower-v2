@@ -20,8 +20,14 @@ Insert picture from 'Am I reponsive?'
     * The Favicon is a mirror image of the logo, which keeps design elements consistent.
 
 * Instruction box
-    * Clickable higher or lower buttons
-    * Also possible to use up and down keyboard strokes
+    * The instruction box is the first and only thing that the user sees as to not overwhelm or distract them. The language used is persuasive to entice the the user to play and it clearly outlines the game's objectives, which the user will read before clicking the ‘play now’ button and entering the game.
+    * When the user has clicked the ‘play now’ button, the instructions are hidden to maximise the game area.
+
+* Game area
+    * The user is presented with a simple interface; a number, up and down icons from FontAwesome which are purposely placed on top of each other for good design, as well as ‘higher and ‘lower’ text. 
+    * The buttons and text are clickable with the cursor changing to pointer and trigger an onEvent action in JavaScript. 
+    * The keystrokes for ‘up’ and ‘down’ have been enabled so users using a keyboard can bypass clicking.
+
 * Container to say if answer is correct or incorrect
     * Traditional green for correct
     * Traditional red for incorrect
