@@ -98,6 +98,25 @@ function updateStreakScore(updateValue) {
         answerArea.innerHTML = 'Incorrect';
         answerArea.style.color = COLORS.RED;
     }
+
+    // Fade answerArea text out
+    fadeOut(answerArea);
+}
+
+function fadeOut(element) {
+    // Set initial opacity
+    element.style.opacity = 1;
+
+    // Fade out
+    let opacity = 1;
+    let fadeEffect = setInterval(function () {
+        if (opacity > 0) {
+            opacity -= 0.1;
+            element.style.opacity = opacity;
+        } else {
+            clearInterval(fadeEffect);
+        }
+    }, 80);
 }
 
 function changeBackgroundColor() {
