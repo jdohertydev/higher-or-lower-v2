@@ -117,6 +117,10 @@ Based on the information given by GitHub, this project uses:
 
 ![Screenshot of Lighthouse report](assets/images/lighthouse-screenshot.png)
 
+## Solved Bugs
+
+* When initiating a game after clicking 'play now', the word 'incorrect' always appeared. This was due to the event listener logging a click and starting a turn. To fix this, I created a new function called `initEventListeners` with an `onActionBtnClick` specifically to load the game first.
+
 ## Unfixed Bugs
 * There are no unfixed bugs in this project.
 
