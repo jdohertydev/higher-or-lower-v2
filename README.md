@@ -103,9 +103,9 @@ Based on the information given by GitHub, this project uses:
 #### JavaScript
 * No errors were found when passing through the official [Jshint validator](https://jshint.com/).
 * The following metrics were returned:
-    * There are **12** functions in this file.
+    * There are **14** functions in this file.
     * Function with the largest signature takes **1** arguments, while the median is **0**.
-    * Largest function has **8** statements in it, while the median is **2.5**.
+    * Largest function has **9** statements in it, while the median is **3**.
     * The most complex function has a cyclomatic complexity value of **5** while the median is **2**.
 
 ### Accessibility
