@@ -55,6 +55,7 @@ Based on the information given by GitHub, this project uses:
 
 * Area to say if the answer is correct or incorrect
      * If the user gets the answer correct, a green 'Correct' text is displayed however if the answer is incorrect, a red 'Incorrect' text is displayed. These colours are traditionally used in this context.
+     * For a better visual style, the answer area text fades out in 0.8 of a second.
 
 ![Screenshot of correct text](assets/images/correct.png)
 
@@ -73,10 +74,6 @@ Based on the information given by GitHub, this project uses:
 
 ![Screenshot of game display in silver](assets/images/Silver-Screenshot.png)
     
-### Features Left to Implement
-* Transitioning text
-    * Within the game area, having the answer status transition in and out would improve the visual aesthetics. This proved a bit too technical at this stage.
-
 ## Testing
 * This site has been tested on a Windows 11 desktop version of Chrome, Firefox and Edge.
 * Using Chrome Dev Tools, simulations of mobile and tablet viewports have also been tested with no display errors.
