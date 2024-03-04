@@ -87,7 +87,7 @@ function incorrectAnswer() {
     }
     updateStreakScore(-streak);
 
-    // As turn has ended, change back backgroudn to black
+    // As turn has ended, change background back to black
 
     document.body.style.backgroundColor = COLORS.BLACK;
 }

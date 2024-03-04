@@ -72,7 +72,10 @@ Based on the information given by GitHub, this project uses:
   
 * To add an element of progress, JavaScript is used to change the page background colour depending on the user's streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
 
+
 ![Screenshot of game display in silver](assets/images/silver-screenshot.png)
+
+* When the user guesses incorrectly, the background is returned back to black to signify the end of this turn. 
     
 ## Testing
 * This site has been tested on a Windows 11 desktop version of Chrome, Firefox and Edge.
