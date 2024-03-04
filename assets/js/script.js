@@ -41,6 +41,8 @@ function startGame() {
     gameArea.style.visibility = "visible";
 }
 
+// Starts turn
+
 function onActionBtnClick() {
     playTurn(this.dataset.value);
 }
