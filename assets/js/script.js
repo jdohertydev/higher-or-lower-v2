@@ -109,7 +109,7 @@ function fadeOut(element) {
     // Set initial opacity
     element.style.opacity = 1;
 
-    // Fade out
+    // Fade out - https://stackoverflow.com/questions/67625352/how-do-i-create-a-callback-function-for-when-the-fading-function-is-done
     let opacity = 1;
     let fadeEffect = setInterval(function () {
         if (opacity > 0) {

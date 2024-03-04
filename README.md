@@ -1,5 +1,5 @@
 # Higher or Lower?
-'Higher or Lower?' is a classic, fun and incredibly simple game that most of us have played in our lives but  normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessible on all devices. 
+'Higher or Lower?' is a classic, fun and incredibly simple game that most of us have played in our lives but normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessible on all devices. 
 
 ![Screenshot of 'Am I responsive image'](assets/images/am-i-responsive-screensplash.png)
 
@@ -135,4 +135,5 @@ Based on the information given by GitHub, this project uses:
 * The idea for the game came from [DAY 8 - How to code a Number Game in Javascript](https://www.youtube.com/watch?v=kMmtRm4P_EE&t=1205s) and some of the design features draw similarities.
 * The website used to make the Favicon was [Favicon Converter](https://favicon.io/favicon-converter/).
 * The icons in the page were taken from [Font Awesome](https://fontawesome.com/).
+* To create the text fade out effect, I used code from [How do I create a callback function for when the fading function is done?](https://stackoverflow.com/questions/67625352/how-do-i-create-a-callback-function-for-when-the-fading-function-is-done).
 * Along the way, I was helped by my mentor as well as tutor support.
