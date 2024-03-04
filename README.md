@@ -34,7 +34,7 @@ Based on the information given by GitHub, this project uses:
 * Favicon
     * The Favicon is a mirror image of the logo, which keeps design elements consistent.
 
-![Screenshot of Favicon](assets/images/Favicon.png)
+![Screenshot of Favicon](assets/images/favicon.png)
 
 * Instruction box
     * The instruction box is the first and only thing that the user sees so to not overwhelm or distract them. The language used is persuasive to entice the user to play and it clearly outlines the game's objectives, which the user will read before clicking the 'play now' button and entering the game.
@@ -64,15 +64,15 @@ Based on the information given by GitHub, this project uses:
 * Score area
     * The score area is logically placed at the bottom of the game area which shows the user's current and highest streak.
 
-![Screenshot of score area on desktop](assets/images/Score-Area.png)
+![Screenshot of score area on desktop](assets/images/score-area.png)
 
 * On smaller viewports, the font size is reduced to accommodate the content.
 
-![Screenshot of score area on mobile](assets/images/Score-Area-on-Mobile.png)
+![Screenshot of score area on mobile](assets/images/score-area-on-mobile.png)
   
 * To add an element of progress, JavaScript is used to change the page background colour depending on the user's streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
 
-![Screenshot of game display in silver](assets/images/Silver-Screenshot.png)
+![Screenshot of game display in silver](assets/images/silver-screenshot.png)
     
 ## Testing
 * This site has been tested on a Windows 11 desktop version of Chrome, Firefox and Edge.
@@ -86,11 +86,11 @@ Based on the information given by GitHub, this project uses:
 
 #### Tablet
 
-![Screenshot of tablet](assets/images/iPad-Screenshot.png)
+![Screenshot of tablet](assets/images/ipad-screenshot.png)
 
 #### Laptop
 
-![Screenshot of desktop](assets/images/Desktop-Screenshot.png)
+![Screenshot of desktop](assets/images/desktop-screenshot.png)
 
 ### Validator Testing
 

@@ -115,6 +115,14 @@ body {
 
 @media (max-width: 400px) {
 
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    #instruction-area {
+        font-size: 1rem;
+    }
+
     .buttons-area span {
         display: none;
     }
