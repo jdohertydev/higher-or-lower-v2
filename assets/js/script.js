@@ -4,7 +4,8 @@ const COLORS = {
     GREEN: 'green',
     BRONZE: '#5c3a0a',
     SILVER: '#727375',
-    GOLD: '#B59410'
+    GOLD: '#B59410',
+    BLACK: '#171717',
 };
 
 let streak = 0;
@@ -85,6 +86,10 @@ function incorrectAnswer() {
         bestStreakNode.innerHTML = streak;
     }
     updateStreakScore(-streak);
+
+    // As turn has ended, change back backgroudn to black
+
+    document.body.style.backgroundColor = COLORS.BLACK;
 }
 
 function updateStreakScore(updateValue) {
