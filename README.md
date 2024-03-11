@@ -11,14 +11,7 @@ Before starting, a basic wireframe was developed using balsamiq which helped vis
 ![Screenshot of wireframe](assets/images/wireframe-image.png)
 
 ## Technologies used
-Based on the information given by GitHub, this project uses:
-
-* JavaScript - 27.9% 
-* HTML - 19.8%
-* Dockerfile - 19.0% 
-* CSS - 16.6% 
-* Python - 8.9% 
-* Shell - 7.8%
+This project uses HTML, CSS and JavaScript.
 
 ## Features
 
