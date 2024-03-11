@@ -42,7 +42,6 @@ function startGame() {
 }
 
 // Starts turn
-
 function onActionBtnClick() {
     playTurn(this.dataset.value);
 }
@@ -88,7 +87,6 @@ function incorrectAnswer() {
     updateStreakScore(-streak);
 
     // As turn has ended, change background back to black
-
     document.body.style.backgroundColor = COLORS.BLACK;
 }
 
@@ -104,7 +102,6 @@ function updateStreakScore(updateValue) {
         answerArea.innerHTML = 'Incorrect';
         answerArea.style.color = COLORS.RED;
     }
-
     // Fade answerArea text out
     fadeOut(answerArea);
 }
