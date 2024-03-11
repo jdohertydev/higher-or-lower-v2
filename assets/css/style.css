@@ -20,7 +20,7 @@ body {
     margin-top: 10px;
 }
 
-/* --------- Heading */
+/* --------- Headings */
 
 .heading {
     text-align: center;
@@ -112,6 +112,8 @@ body {
     padding: 4px;
     border-radius: 10px 10px;
 }
+
+/* --------- Media queries */
 
 @media (max-width: 400px) {
 
