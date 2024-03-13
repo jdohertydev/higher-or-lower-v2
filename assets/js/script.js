@@ -9,6 +9,7 @@ const COLORS = {
 };
 
 let streak = 0;
+let fadeEffect = null;
 
 const playNowBtn = document.getElementById("play-now");
 const instructionArea = document.getElementById("instruction-area");
@@ -107,12 +108,18 @@ function updateStreakScore(updateValue) {
 }
 
 function fadeOut(element) {
+
+    // Prevents text blinking if user is clicking quickly
+    if (fadeEffect) {
+        clearInterval(fadeEffect);
+    }
+
     // Set initial opacity
     element.style.opacity = 1;
 
     // Fade out - https://stackoverflow.com/questions/67625352/how-do-i-create-a-callback-function-for-when-the-fading-function-is-done
     let opacity = 1;
-    let fadeEffect = setInterval(function () {
+    fadeEffect = setInterval(function () {
         if (opacity > 0) {
             opacity -= 0.1;
             element.style.opacity = opacity;
