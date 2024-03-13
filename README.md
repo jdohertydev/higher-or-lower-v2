@@ -90,15 +90,33 @@ This project uses HTML, CSS and JavaScript.
 
 #### Mobile Device
 
+##### Instruction splash screen 
+
 ![Screenshot of mobile device](readme-images/mobile-viewport.png)
+
+##### Game splash screen
+
+![Screenshot of mobile device](readme-images/game-splash-screen-mobile.png)
 
 #### Tablet
 
+##### Instruction splash screen 
+
 ![Screenshot of tablet](readme-images/ipad-screenshot.png)
+
+##### Game splash screen
+
+![Screenshot of tablet device](readme-images/game-splash-screen-tablet.png)
 
 #### Laptop
 
+##### Instruction splash screen 
+
 ![Screenshot of desktop](readme-images/desktop-screenshot.png)
+
+##### Game splash screen
+
+![Screenshot of desktop](readme-images/game-splash-screen-desktop.png)
 
 ### Validator Testing
 
