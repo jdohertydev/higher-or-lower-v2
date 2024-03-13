@@ -1,14 +1,14 @@
 # Higher or Lower?
 'Higher or Lower?' is a classic, fun and incredibly simple game that most of us have played in our lives but normally with playing cards. This site has taken this straightforward concept and digitised it. Using pure JavaScript for the logic and supported by HTML and CSS, it allows the user to feel the same adrenaline rush experienced when deciding if the next number will be higher or lower. It is fully responsive and accessible on all devices. 
 
-![Screenshot of 'Am I responsive image'](assets/images/am-i-responsive-screensplash.png)
+![Screenshot of 'Am I responsive image'](readme-images/am-i-responsive-screensplash.png)
 
 [Source: https://jdohertydev.github.io/higher-or-lower-v2/]
 
 ## Early development
 Before starting, a basic wireframe was developed using balsamiq which helped visualise the website.
 
-![Screenshot of wireframe](assets/images/wireframe-image.png)
+![Screenshot of wireframe](readme-images/wireframe-image.png)
 
 ## Technologies used
 This project uses HTML, CSS and JavaScript.
@@ -22,51 +22,51 @@ This project uses HTML, CSS and JavaScript.
 * Logo and Heading
     * The logo and heading are centred at the top of the page which makes it easy for the user to see. The logo, which combines the '+' and '–' symbols, adds a visual element which breaks up the text. 
 
-![Screenshot of logo and heading](assets/images/logo.png)
+![Screenshot of logo and heading](readme-images/logo.png)
 
 * Favicon
     * The Favicon is a mirror image of the logo, which keeps design elements consistent.
 
-![Screenshot of Favicon](assets/images/favicon.png)
+![Screenshot of Favicon](readme-images/favicon.png)
 
 * Instruction box
     * The instruction box is the first and only thing that the user sees so to not overwhelm or distract them. The language used is persuasive to entice the user to play and it clearly outlines the game's objectives, which the user will read before clicking the 'play now' button and entering the game.
     * When the user has clicked the 'play now' button, the instructions are hidden to maximise the game area.
 
-![Screenshot of instruction box](assets/images/instruction-box.png)
+![Screenshot of instruction box](readme-images/instruction-box.png)
 
 * Game area
     * The user is presented with a simple interface; a randomly generated number, 'up' and 'down' icons from FontAwesome which are purposely placed on top of each other for good design, as well as 'higher and 'lower' text. 
     * The 'higher' and 'lower' text element is removed when viewed on smaller viewports to avoid the text wrapping.
 
-![Screenshot example of text being removed for smaller viewports](assets/images/mobile-with-icons-only.png)
+![Screenshot example of text being removed for smaller viewports](readme-images/mobile-with-icons-only.png)
 
 * The buttons and text are clickable with the cursor changing to pointer and trigger an onEvent action in JavaScript. 
 * The keystrokes for 'up' and 'down' have been enabled so users using a keyboard can bypass clicking.
 
-![Screenshot of game area](assets/images/game-area.png)
+![Screenshot of game area](readme-images/game-area.png)
 
 * Area to say if the answer is correct or incorrect
      * If the user gets the answer correct, a green 'Correct' text is displayed however if the answer is incorrect, a red 'Incorrect' text is displayed. These colours are traditionally used in this context.
      * For a better visual style, the answer area text fades out in 0.8 of a second.
 
-![Screenshot of correct text](assets/images/correct.png)
+![Screenshot of correct text](readme-images/correct.png)
 
-![Screenshot of incorrect text](assets/images/incorrect.png)
+![Screenshot of incorrect text](readme-images/incorrect.png)
 
 * Score area
     * The score area is logically placed at the bottom of the game area which shows the user's current and highest streak.
 
-![Screenshot of score area on desktop](assets/images/score-area.png)
+![Screenshot of score area on desktop](readme-images/score-area.png)
 
 * On smaller viewports, the font size is reduced to accommodate the content.
 
-![Screenshot of score area on mobile](assets/images/score-area-on-mobile.png)
+![Screenshot of score area on mobile](readme-images/score-area-on-mobile.png)
   
 * To add an element of progress, JavaScript is used to change the page background colour depending on the user's streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
 
 
-![Screenshot of game display in silver](assets/images/silver-screenshot.png)
+![Screenshot of game display in silver](readme-images/silver-screenshot.png)
 
 * When the user guesses incorrectly, the background is returned back to black to signify the end of this turn. 
     
@@ -78,15 +78,15 @@ This project uses HTML, CSS and JavaScript.
 
 #### Mobile Device
 
-![Screenshot of mobile device](assets/images/mobile-viewport.png)
+![Screenshot of mobile device](readme-images/mobile-viewport.png)
 
 #### Tablet
 
-![Screenshot of tablet](assets/images/ipad-screenshot.png)
+![Screenshot of tablet](readme-images/ipad-screenshot.png)
 
 #### Laptop
 
-![Screenshot of desktop](assets/images/desktop-screenshot.png)
+![Screenshot of desktop](readme-images/desktop-screenshot.png)
 
 ### Validator Testing
 
@@ -108,7 +108,7 @@ This project uses HTML, CSS and JavaScript.
 * This site was developed with a colour scheme that is visually appealing but also very minimal, always considering the accessibility of the user.
 * Using Lighthouse, this site scored an accessibility rating of **100** and a **100** performance rating overall.
 
-![Screenshot of Lighthouse report](assets/images/lighthouse-screenshot.png)
+![Screenshot of Lighthouse report](readme-images/lighthouse-screenshot.png)
 
 ## Solved Bugs
 
