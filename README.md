@@ -16,7 +16,6 @@ As a player of this game, I want:
 * to be rewarded when I pass game milestones.
 * to know when my turn is over.
 
-
 ## Early development
 Before starting, a basic wireframe was developed using balsamiq which helped visualise the website.
 
@@ -76,7 +75,6 @@ This project uses HTML, CSS and JavaScript.
 ![Screenshot of score area on mobile](readme-images/score-area-on-mobile.png)
   
 * To add an element of progress, JavaScript is used to change the page background colour depending on the user's streak (3 changes to bronze, 5 changes to silver and 10 changes to gold).
-
 
 ![Screenshot of game display in silver](readme-images/silver-screenshot.png)
 
