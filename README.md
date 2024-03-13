@@ -5,6 +5,18 @@
 
 [Source: https://jdohertydev.github.io/higher-or-lower-v2/]
 
+# User experience
+As a player of this game, I want:
+
+* a simplistic design.
+* it to work on all devices.
+* it to capture my attention. 
+* to be able to play without having to learn a lot of rules.
+* to see my progress in the form of a score counter.
+* to be rewarded when I pass game milestones.
+* to know when my turn is over.
+
+
 ## Early development
 Before starting, a basic wireframe was developed using balsamiq which helped visualise the website.
 
