@@ -142,7 +142,8 @@ This project uses HTML, CSS and JavaScript.
 
 ## Solved Bugs
 
-* When initiating a game after clicking 'play now', the word 'incorrect' always appeared. This was due to the event listener logging a click and starting a turn. To fix this, I created a new function with an `onActionBtnClick` specifically to load the game first.
+* When initiating a game after clicking 'play now', the word 'incorrect' always appeared. This was due to the event listener logging a click and starting a turn. To fix this, I created a new function with an 'onActionBtnClick' specifically to load the game first.
+* When a user clicked 'higher' or 'lower' very quickly, it made the correct/incorrect text blink. This was fixed using an 'if' statement calling `clearInterval` at the beginning of the function.
 
 ## Unfixed Bugs
 * There are no unfixed bugs in this project.
